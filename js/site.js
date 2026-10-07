@@ -10,22 +10,20 @@ const HERO_IMAGES = [
     "images/hero1.jpg",
     "images/hero2.jpg",
     "images/hero3.jpg",
-    "images/hero4.jpg",
-    "images/hero5.jpg",
 ];
 
 const AUTO_MS = 5000;   // autoplay speed per slide (ms)
 
 (function initHeroSlider() {
-    const slider      = document.getElementById('heroSlider');
-    const slidesWrap  = document.getElementById('heroSlides');
-    const dotsWrap    = document.getElementById('heroDots');
-    const prevBtn     = document.getElementById('heroPrev');
-    const nextBtn     = document.getElementById('heroNext');
+    const slider     = document.getElementById('heroSlider');
+    const slidesWrap = document.getElementById('heroSlides');
+    const dotsWrap   = document.getElementById('heroDots');
+    const prevBtn    = document.getElementById('heroPrev');
+    const nextBtn    = document.getElementById('heroNext');
 
     if (!slider || !slidesWrap || !dotsWrap) return;
 
-    // --- Build slides ---
+    // Build slides
     HERO_IMAGES.forEach((src, i) => {
         const img = document.createElement('img');
         img.src = src;
@@ -34,7 +32,7 @@ const AUTO_MS = 5000;   // autoplay speed per slide (ms)
         slidesWrap.appendChild(img);
     });
 
-    // --- Build dots ---
+    // Build dots
     HERO_IMAGES.forEach((_, i) => {
         const dot = document.createElement('button');
         dot.className = 'hero-dot' + (i === 0 ? ' active' : '');
@@ -43,7 +41,6 @@ const AUTO_MS = 5000;   // autoplay speed per slide (ms)
         dotsWrap.appendChild(dot);
     });
 
-    // --- Slider logic ---
     const slides = slidesWrap.querySelectorAll('.hero-slide');
     const dots   = dotsWrap.querySelectorAll('.hero-dot');
     const total  = slides.length;
@@ -81,7 +78,6 @@ const AUTO_MS = 5000;   // autoplay speed per slide (ms)
     slider.addEventListener('mouseenter', stopAuto);
     slider.addEventListener('mouseleave', startAuto);
 
-    // Touch swipe
     let startX = 0;
     slider.addEventListener('touchstart', e => {
         startX = e.changedTouches[0].screenX;

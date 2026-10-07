@@ -22,8 +22,7 @@
             <nav class="main-nav">
                 <a href="index.html" class="active">Home</a>
                 <a href="info.html">About</a>
-                <a href="info.html#contact">Contact</a>
-                <a href="#donate" class="btn-donate">Donate</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
@@ -44,29 +43,29 @@
 
     <!-- ================= HERO SLIDER ================= -->
     <section class="hero">
-    <div class="container">
-        <div class="hero-card" id="heroSlider">
+        <div class="container">
+            <div class="hero-card" id="heroSlider">
 
-            <div class="hero-slides" id="heroSlides">
-                <!-- Slides injected by JavaScript -->
+                <div class="hero-slides" id="heroSlides">
+                    <!-- Slides injected by JavaScript -->
+                </div>
+
+                <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous slide">‹</button>
+                <button class="hero-arrow hero-next" id="heroNext" aria-label="Next slide">›</button>
+
+                <div class="hero-dots" id="heroDots">
+                    <!-- Dots injected by JavaScript -->
+                </div>
+
+                <div class="hero-overlay">
+                    <span class="hero-label">Welcome to</span>
+                    <strong>Shiva Temple Oslo</strong>
+                    <p>Om Namah Shivaya</p>
+                </div>
+
             </div>
-
-            <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous slide">‹</button>
-            <button class="hero-arrow hero-next" id="heroNext" aria-label="Next slide">›</button>
-
-            <div class="hero-dots" id="heroDots">
-                <!-- Dots injected by JavaScript -->
-            </div>
-
-            <div class="hero-overlay">
-                <span class="hero-label">Welcome to</span>
-                <strong>Shiva Temple Oslo</strong>
-                <p>Om Namah Shivaya</p>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- ================= MAIN ================= -->
     <main class="container main-grid">
@@ -79,15 +78,11 @@
             <ul class="event-list">
                 <li>
                     <div class="event-time">07:00</div>
-                    <div class="event-info">
-                        <strong>Morning Puja</strong>
-                    </div>
+                    <div class="event-info"><strong>Morning Puja</strong></div>
                 </li>
                 <li>
                     <div class="event-time">10:30</div>
-                    <div class="event-info">
-                        <strong>Abhishekam</strong>
-                    </div>
+                    <div class="event-info"><strong>Abhishekam</strong></div>
                 </li>
                 <li>
                     <div class="event-time">18:30</div>
@@ -97,9 +92,7 @@
                 </li>
                 <li>
                     <div class="event-time">20:00</div>
-                    <div class="event-info">
-                        <strong>Bhajan &amp; Satsang</strong>
-                    </div>
+                    <div class="event-info"><strong>Bhajan &amp; Satsang</strong></div>
                 </li>
             </ul>
 
@@ -107,31 +100,37 @@
         </section>
 
         <!-- RIGHT: OPENING TIMINGS -->
-<section class="card" id="hours">
-    <p class="card-eyebrow">OPENING HOURS</p>
-    <h2 class="card-title">Timings</h2>
+        <section class="card" id="hours">
+            <p class="card-eyebrow">OPENING HOURS</p>
+            <h2 class="card-title">Timings</h2>
 
-    <ul class="hours-list">
-        <li>
-            <span>Morning</span>
-            <span>06:00 – 08:00</span>
-        </li>
-        <li>
-            <span>Evening</span>
-            <span>18:00 – 20:00</span>
-        </li>
-        <li>
-            <span>Saturday &amp; Sunday</span>
-            <span>06:00 – 08:00 &amp; 18:00 – 20:00</span>
-        </li>
-        <li>
-            <span>Public Holidays</span>
-            <span>07:00 – 09:00 &amp; 17:00 – 19:00</span>
-        </li>
-    </ul>
-</section>
+            <ul class="hours-list">
+                <li><span>Morning</span><span>06:00 – 08:00</span></li>
+                <li><span>Evening</span><span>18:00 – 20:00</span></li>
+                <li><span>Saturday &amp; Sunday</span><span>06:00 – 08:00 &amp; 18:00 – 20:00</span></li>
+                <li><span>Public Holidays</span><span>07:00 – 09:00 &amp; 17:00 – 19:00</span></li>
+            </ul>
+        </section>
 
     </main>
+
+    <!-- ================= DONATION CARD ================= -->
+    <section class="container donate-section" id="donate">
+        <div class="donate-card">
+            <div>
+                <p class="card-eyebrow">SUPPORT US</p>
+                <h2 class="donate-title">New Temple Fund</h2>
+                <p class="donate-message">
+                    We use this money for the new temple construction.
+                </p>
+            </div>
+
+            <div class="donate-vipps">
+                <span class="vipps-label">Donate via Vipps</span>
+                <span class="vipps-number">665817</span>
+            </div>
+        </div>
+    </section>
 
     <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
@@ -141,12 +140,16 @@
             <nav class="footer-links">
                 <a href="index.html">Home</a>
                 <a href="info.html">About</a>
-                <a href="info.html#contact">Contact</a>
+                <a href="contact.html">Contact</a>
                 <a href="#events">Events</a>
                 <a href="#hours">Hours</a>
             </nav>
 
-            <p class="footer-contact">📍 [ADDRESS] · 📞 [PHONE] · ✉️ [EMAIL]</p>
+            <p class="footer-contact">
+                📍 Industriveien 1, 2020 Skedsmokorset ·
+                📞 41 28 96 40 ·
+                ✉️ nhmsabai@gmail.com
+            </p>
         </div>
     </footer>
 
