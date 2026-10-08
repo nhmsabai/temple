@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact — Shiva Temple Oslo</title>
+    <title>Events — Shiva Temple Oslo</title>
     <link rel="stylesheet" href="css/site.css" />
 </head>
-
 <body>
 
     <header class="site-header">
@@ -22,9 +20,9 @@
 
             <nav class="main-nav">
     <a href="index.html">Home</a>
-    <a href="events.html">Events</a>
+    <a href="events.html" class="active">Events</a>
     <a href="info.html">About</a>
-    <a href="contact.html" class="active">Contact</a>
+    <a href="contact.html">Contact</a>
 </nav>
         </div>
     </header>
@@ -32,38 +30,35 @@
     <main class="page-main">
         <section class="page-header">
             <div class="container">
-                <h1>Contact</h1>
-                <p>Get in touch with us</p>
+                <h1>Events</h1>
+                <p>Upcoming and recurring events at Shiva Temple Oslo</p>
             </div>
         </section>
 
-        <section class="container content-blocks">
+        <section class="container events-container">
 
-            <article class="content-block contact-block">
-                <h2>Address</h2>
-                <p>Industriveien 1<br />2020 Skedsmokorset<br />Norway</p>
-                <p>
-                    <a class="map-link"
-                        href="https://www.google.com/maps/search/?api=1&query=Industriveien+1+2020+Skedsmokorset"
-                        target="_blank" rel="noopener">
-                        Open in Google Maps →
-                    </a>
-                </p>
-            </article>
+            <!-- Filter bar -->
+            <div class="events-filter">
+                <div class="filter-group">
+                    <label for="dateFilter">Pick a date</label>
+                    <input type="date" id="dateFilter" />
+                </div>
 
-            <article class="content-block contact-block">
-                <h2>Phone &amp; Email</h2>
-                <p>
-                    📞 <a href="tel:+4741289640">41 28 96 40</a><br />
-                    ✉️ <a href="mailto:nhmsabai@gmail.com">nhmsabai@gmail.com</a>
-                </p>
-            </article>
+                <div class="filter-actions">
+                    <button type="button" class="btn-filter" id="btnToday">Today</button>
+                    <button type="button" class="btn-filter" id="btnUpcoming">Upcoming</button>
+                    <button type="button" class="btn-filter" id="btnAll">All</button>
+                </div>
 
-            <article class="content-block contact-block">
-                <h2>Donations</h2>
-                <p><strong>Vipps:</strong> 665817</p>
-                <p class="muted">Funds support the new temple construction.</p>
-            </article>
+                <div class="filter-status" id="filterStatus">
+                    Showing: <strong>All events</strong>
+                </div>
+            </div>
+
+            <!-- Event list -->
+            <div id="eventsList" class="events-list">
+                <p class="events-loading">Loading events…</p>
+            </div>
 
         </section>
     </main>
@@ -74,6 +69,7 @@
 
             <nav class="footer-links">
                 <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
                 <a href="info.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>
@@ -87,6 +83,6 @@
     </footer>
 
     <script src="js/site.js"></script>
+    <script src="js/events.js"></script>
 </body>
-
 </html>
